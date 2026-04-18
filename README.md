@@ -18,4 +18,10 @@ A simple web-based event management system where users can:
 ## How to Run
 1. Clone repo
 2. Open in browser / run project
-![App Screenshot](screenshot.png)
+
+## Author 
+Aman Prajapati
+
+
+## App Screenshot
+![App Screenshot](https://github.com/Aman113Prajapati/Event-Manage/blob/main/Event%20Proof.png?raw=true)

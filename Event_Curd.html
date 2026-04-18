@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events operations</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            height: 100vw;
+            width: 100vw;
+        }
+
+        .center {
+            width: 80%;
+            height: 100vw;
+            justify-content: space-between;
+            flex-direction: column;
+            display: flex;
+            margin: auto;
+        }
+
+        .first {
+            justify-content: space-between;
+            display: flex;
+            height: 7%;
+            width: 100%;
+        }
+
+        .first button {
+            width: 33%;
+            border: none;
+            color: white;
+            background-color: navy;
+        }
+
+        .second {
+            overflow: auto;
+            height: 90%;
+            width: 100%;
+        }
+
+        .second p {
+            color: white;
+            margin-bottom: 10px;
+            background-color: navy;
+            padding: 10px;
+        }
+
+        .cancelicon {
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="center">
+            <div class="first">
+                <button onclick="createRecord()">Create</button>
+                <button onclick="deletefirst()">Delete First</button>
+                <button onclick="deleteAll()">Delete All</button>
+            </div>
+            <div class="second">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var center = document.querySelector(".center")
+        var second = document.querySelector(".second")
+        var count = 1
+        function createRecord() {
+            var p = document.createElement("p")
+            p.innerHTML = `This is Paragraph p${count}<span onclick="deleteRecord('p${count}')" class=" cancelicon material-symbols-outlined">
+cancel
+</span> `
+            p.id = `p${count}`
+            count++
+            second.appendChild(p)
+        }
+        function deleteRecord(id) {
+            second.removeChild(document.getElementById(id))
+        }
+        function deletefirst(id) {
+            if (second.childNodes.length > 1)
+                second.removeChild(second.childNodes[1])
+        }
+        function deleteAll() {
+            center.removeChild(second)
+            second = document.createElement("div")
+            second.classList.add('second')
+            center.appendChild(second)
+        }
+    </script>
+</body>
+</html>

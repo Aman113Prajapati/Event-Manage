@@ -19,7 +19,7 @@ A simple web-based event management system where users can:
 1. Clone repo
 2. Open in browser / run project
 
-## Author 
+## Author   
 Aman Prajapati
 
 

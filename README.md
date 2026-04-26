@@ -24,4 +24,4 @@ Aman Prajapati
 
 
 ## App Screenshot
-![App Screenshot]([![App Screenshot](https://raw.githubusercontent.com/Aman113Prajapati/Event-Manage/main/Event%20Proof.png)](https://raw.githubusercontent.com/Aman113Prajapati/Event-Manage/main/Event%20Proof.png))
+[![App Screenshot](https://raw.githubusercontent.com/Aman113Prajapati/Event-Manage/main/Event%20Proof.png)](https://raw.githubusercontent.com/Aman113Prajapati/Event-Manage/main/Event%20Proof.png)
